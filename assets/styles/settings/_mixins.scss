@@ -1,0 +1,64 @@
+// Breakpoints
+@mixin break-xs {
+    @media (min-width: #{breakpoint(xs)}) {
+        @content;
+    }
+}
+
+@mixin break-xs-portrait {
+    @media (min-width: #{breakpoint(xs)}) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin break-sm {
+    @media (min-width: #{breakpoint(sm)}) {
+        @content;
+    }
+}
+
+@mixin break-sm-portrait {
+    @media (min-width: #{breakpoint(sm)}) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin break-md {
+    @media (min-width: #{breakpoint(md)}) {
+        @content;
+    }
+}
+
+@mixin break-md-portrait {
+    @media (min-width: #{breakpoint(md)}) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin break-lg {
+    @media (min-width: #{breakpoint(lg)}) {
+        @content;
+    }
+}
+
+@mixin break-lg-portrait {
+    @media (min-width: #{breakpoint(lg)}) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin break-xl {
+    @media (min-width: #{breakpoint(xl)}) {
+        @content;
+    }
+}
+
+@mixin break-xl-portrait {
+    @media (min-width: #{breakpoint(xl)}) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin hover {
+    transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1), color 50ms;
+}

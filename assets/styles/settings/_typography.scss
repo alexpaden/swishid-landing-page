@@ -1,0 +1,41 @@
+@mixin font-size($min, $max) {
+    @media screen and (min-width: 320px) {
+        font-size: calc(#{$min}px + (#{$max} - #{$min}) * ((100vw - 320px) / (1600 - 320)))
+    }
+    @media screen and (min-width: 1400px) {
+        font-size: #{$max}px
+    }
+}
+
+$font-weights: (
+    thin: 100,
+    extra-light: 200,
+    light: 300,
+    base: 400,
+    medium: 500,
+    semi-bold: 600,
+    bold: 700,
+    extra-bold: 800,
+    black: 900
+);
+
+$font-sizes: (
+    xs: 10px,
+    sm: 12px,
+    base: 14px,
+    h6: 16px,
+    h5: 20px,
+    h4: 24px,
+    h3: 28px,
+    h2: 32px,
+    h1: 36px
+);
+
+$letter-spacings: (
+    heading: -0.05em,
+);
+
+$line-heights: (
+    base: 17px,
+    md: 22px
+);
