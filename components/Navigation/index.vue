@@ -5,17 +5,10 @@
         <img src="@/assets/images/logo.svg" alt="Swish Logo">
       </nuxt-link>
       <ul id="navbar">
+
         <li v-if="rootPath" class="nav-item">
           <a
-            @click="scrollTo('main', 'end', 'end')"
-            class="nav-link"
-          >
-            Features
-          </a>
-        </li>
-        <li v-if="rootPath" class="nav-item">
-          <a
-            @click="scrollTo('#about', 'center', 'center')"
+            @click="scrollTo('#content', 'center', 'center')"
             class="nav-link"
           >
             About Us
