@@ -1,7 +1,7 @@
 {
   "name": "swishid.com",
   "version": "1.0.1",
-  "description": "Swish provides identity verification and KYC Management at no cost. It is utility, security, and identity for the internet's login.",
+  "description": "A simple interface for any business to start handling identity documents in a secure & usable manner.",
   "author": "Max",
   "private": true,
   "scripts": {
