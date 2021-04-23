@@ -40,59 +40,49 @@
     </header>
 
     <main>
-      <div class="container">
-        <h2>The featuresx you need, the cost you want.</h2>
-        <div id="cards">
-          <a-card>
-            <figure>
-              <img
-                alt="Solutions mindset illustration"
-                src="@/assets/images/integration.svg"
-              >
-            </figure>
-            <div class="card-content">
-              <h5>Easy Integration</h5>
-              <p>
-                Swish allows any company to rapidly deploy identity verification services at scale.
-                We've eliminated the high barrier to entry cost of traditional providers and the need for in-house solutions.
+
+          <section id="subscribe">
+              <h5>Online Identity</h5>
+              <p><b>What does your business stand to gain?</b></p>
+              <br/>
+                  <dl>
+                      <dt><i>kyc (know-your-customer)</i></dt>
+                      <dt><i>cip (customer-identification-program)</i></dt>
+                      <dt><i>compliance</i></dt>
+                      <dt><i>security</i></dt>
+                      <dt><i>customer satisfaction</i></dt>
+                      <dt><i>cyber security risk reduction</i></dt>
+                  </dl>
               </p>
-            </div>
-          </a-card>
-          <a-card>
-            <figure>
-              <img
-                alt="Solutions mindset illustration"
-                src="@/assets/images/dashboard.svg"
+              <form
+                  @submit.prevent="subscribe"
+                  name="Notify Me!"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
               >
-            </figure>
-            <div class="card-content">
-              <h5>Clean Dashboard</h5>
-              <p>
-                We believe user experience is key to the future of digital identity and every layer of Swish is built with that in mind.
-              </p>
-            </div>
-          </a-card>
-          <a-card>
-            <figure>
-              <img
-                alt="Solutions mindset illustration"
-                src="@/assets/images/fraud.svg"
-              >
-            </figure>
-            <div class="card-content">
-              <h5>AI Fraud Detection</h5>
-              <p>
-                Swish is continuously developing new methods to detect fraud and automate the verification process. We deploy a variety of computer vision technologies such as facial recognition, liveliness detection, pixel manipulation, and data cross-checking.
-              </p>
-            </div>
-          </a-card>
-        </div>
-      </div>
+                  <input type="hidden" name="form-name" value="subscribe">
+                  <a-text-field
+                      :error="error"
+                      :success="success"
+                      v-model="form.email"
+                      v-on:change="error = false"
+                      @success="resetValidation"
+                      name="email"
+                      placeholder="Email"
+                      type="email"
+                  />
+                  <a-button type="submit">
+                      Request Information
+                  </a-button>
+              </form>
+          </section>
+
     </main>
 
     <section id="about">
       <div class="container">
-        <h3>Security, Management, and Convenience.</h3>
+        <h3>Security meets simplicity.</h3>
         <p>
           The current market is dominated by thousands of digital identity providers both private and in-house.
           We believe that in order to succeed your product must be your focus.
@@ -129,10 +119,10 @@
             >
           </div>
           <div class="info-content">
-            <span>Multi-Factor Identification</span>
+            <span>Connect with Swish</span>
             <p>
-              Our goal is the continued development of digital identity.
-              Each step forward builds on privacy and security.
+                Simplified identity for the internet.
+                Allowing you a new kind of transaction.
             </p>
           </div>
         </div>
@@ -145,43 +135,13 @@
             >
           </div>
           <div class="info-content">
-            <span>Reusable Identity</span>
+            <span>Advanced Fraud Detection</span>
             <p>
-              Most providers charge a flat rate per identification regardless of how
-              many times they've verified the same person or documents.
+                We are working to implement the most advanced system in fraud & identity detection.
             </p>
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="subscribe">
-      <h5>Coming Soon...</h5>
-      <p>
-        Signup below and we'll notify you as soon as Swish launches publicly!
-      </p>
-      <form
-        @submit.prevent="subscribe"
-        name="Notify Me!"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="form-name" value="subscribe">
-        <a-text-field
-          :error="error"
-          :success="success"
-          v-model="form.email"
-          v-on:change="error = false"
-          @success="resetValidation"
-          name="email"
-          placeholder="Email"
-          type="email"
-        />
-        <a-button type="submit">
-          Join Swish
-        </a-button>
-      </form>
     </section>
 
     <a-footer />
