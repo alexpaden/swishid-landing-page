@@ -41,7 +41,7 @@
 
     <main>
       <div class="container">
-        <h2>The features you need, the cost you want.</h2>
+        <h2>The featuresx you need, the cost you want.</h2>
         <div id="cards">
           <a-card>
             <figure>
