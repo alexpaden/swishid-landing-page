@@ -3,7 +3,7 @@ export default {
     mode: 'universal',
     // Headers of the page
     head: {
-        title: 'Swish | Identity Verification | KYC Management',
+        title: 'Swish | Identity Document Management',
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
