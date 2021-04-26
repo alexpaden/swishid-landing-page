@@ -28,7 +28,9 @@
           <img
             id="img-dashboard"
             alt="Image of the Swish web platform dashboard design."
-            src="@/assets/images/dashboard.png"
+            src="@/assets/images/ipad1.png"
+            width="1500px"
+            height="1000px"
           >
           <img
             id="pattern-header"
