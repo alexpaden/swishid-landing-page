@@ -1,6 +1,6 @@
 import pkg from './package'
 export default {
-    mode: 'universal',
+    //mode: 'universal',
     // Headers of the page
     head: {
         title: 'Swish | Identity Document Management',

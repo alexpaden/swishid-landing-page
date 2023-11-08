@@ -1,0 +1,30 @@
+[
+  {
+    "name": "404",
+    "path": "/404",
+    "component": "/Users/alex/Desktop/swishid-landing-page/pages/404/index.vue",
+    "chunkName": "pages/404/index",
+    "_name": "_d24d7f4c"
+  },
+  {
+    "name": "cookie-policy",
+    "path": "/cookie-policy",
+    "component": "/Users/alex/Desktop/swishid-landing-page/pages/cookie-policy/index.vue",
+    "chunkName": "pages/cookie-policy/index",
+    "_name": "_a2ec4146"
+  },
+  {
+    "name": "privacy",
+    "path": "/privacy",
+    "component": "/Users/alex/Desktop/swishid-landing-page/pages/privacy/index.vue",
+    "chunkName": "pages/privacy/index",
+    "_name": "_8ffec9ac"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/alex/Desktop/swishid-landing-page/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_02def3f1"
+  }
+]
