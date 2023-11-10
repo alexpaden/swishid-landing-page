@@ -26,7 +26,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "https://swish.id/og-image.png",
+        content: "https://swish.id/og-logo.png",
       },
       { property: "og:image:width", content: "279" },
       { property: "og:image:height", content: "279" },

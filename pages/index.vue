@@ -78,6 +78,15 @@
               </form>
           </section>
 
+
+        <div id="visual">
+          <img
+            id="img-dashboard"
+            alt="Image of the Swish web platform dashboard design."
+            src="@/assets/images/dashboard.png"
+          >
+        </div>
+
     </main>
 
     <section id="about">
@@ -241,14 +250,6 @@ header
     padding: 60px 20px 60px 20px
     background: color(blue-lighten)
 
-    @include break-sm
-        padding: 60px 20px 20px
-
-    @include break-md
-        padding: 50px 80px 20px 80px
-
-    @include break-lg
-        height: calc(100vh - 80px)
 
     .container
         display: flex
@@ -555,4 +556,20 @@ main
     button:hover
         background: color(blue-darken)
         @include hover
+
+#img-dashboard
+    width: 100%
+    height: auto
+    max-width: 2400px
+    z-index: 10
+
+    @include break-lg
+        max-width: 2400px 
+
+    @include break-md
+        max-width: 1800px
+
+    @include break-sm
+        max-width: 1200px 
+      
 </style>
